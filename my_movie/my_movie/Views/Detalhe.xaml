@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="my_movie.Views.Detalhe"
+             x:Name="page"
+             BackgroundColor="#383838">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal"
+                         Margin="0, 5, 0, 0"
+                         VerticalOptions="Start">
+                <Image WidthRequest="150"
+                       x:Name="imgposter">
+                </Image>
+                <StackLayout Orientation="Vertical"
+                             Margin="10,10,10,0">
+                    <Label Text="Sinopse"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           TextColor="White"></Label>
+                    <Label LineBreakMode="TailTruncation"
+                       Text="Apaixonado por Nova York, Gatsby (Timothée Chalamet) decide passar um fim de semana na cidade ao lado de Ashleigh (Elle Fanning), sua namorada. No entanto, aquilo que era pra ser uma aventura romântica acaba tomando um rumo inesperado. Aspirante a jornalista, Ashleigh conhece o diretor de cinema Roland Pollard (Liev Schreiber), que a convida para a exibição --- Ashleigh (Elle Fanning), sua namorada. No entanto, aquilo que era pra ser uma aventura romântica acaba tomando um rumo inesperado. Aspirante a jornalista, Ashleigh conhece o diretor de cinema Roland Pollard (Liev Schreiber), que a convida para a exibição "
+                       HorizontalTextAlignment="Center"                       
+                       VerticalOptions="Start"
+                       MaxLines="30"
+                       x:Name="lbloverview"
+                       TextColor="White">
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Center"
+                         Margin="10,20,10,0">
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Start"
+                             Orientation="Vertical">
+                    <Label Text="Informações"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="White">
+                    </Label>
+                    <Label Text="Lançamento: xx/xx/xxxx"
+                           x:Name="lblrelease"
+                           TextColor="White">
+                    </Label>
+                    <Label Text="Gênero"
+                           x:Name="lblgenero"
+                           TextColor="White">
+                    </Label>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"
+                             HorizontalOptions="End">
+                    <Label Text="Avaliação dos usuários"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           FontSize="Large" 
+                           FontAttributes="Bold"
+                           TextColor="White">
+                    </Label>
+                    <RelativeLayout HorizontalOptions="End">
+                        <Image Source="y_bar.png"
+                               WidthRequest="160" 
+                               Aspect="Fill"
+                               HeightRequest="40"
+                               x:Name="imgbarra"></Image>
+                        <Image Source="five_stars.png"
+                               WidthRequest="160" 
+                               Aspect="Fill"
+                               HeightRequest="40"></Image>
+                    </RelativeLayout>
+                </StackLayout>
+            </StackLayout>
+            <Image VerticalOptions="Start"
+                   x:Name="imgbg"
+                   WidthRequest="500"
+                   Margin="0,10,0,0">
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

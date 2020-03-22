@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="my_movie.Views.Lista"
+             BackgroundColor="#383838">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView  
+                x:Name="moviesList" 
+                Margin="0,10,0,20"
+                SeparatorColor="Gray"
+                SeparatorVisibility="Default"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"
+                                         HeightRequest="120"
+                                         Margin="10,10,10,10">
+                                <StackLayout>
+                                    <Image Source="{Binding poster_path}" 
+                                           Opacity="1"
+                                           HeightRequest="100"
+                                           VerticalOptions="CenterAndExpand">
+                                    </Image>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Label  Text="{Binding title}"
+                                        TextColor="White"
+                                        FontSize="Medium"
+                                        Margin="0,10,0,0"
+                                        Grid.Row="1"
+                                        FontAttributes="Bold">
+                                    </Label>
+                                    <Label  Text="{Binding release_year}"
+                                            TextColor="White"
+                                            FontSize="Small"
+                                            Margin="0,5,0,2"
+                                            Grid.Row="2">
+                                    </Label>
+                                    <RelativeLayout>
+                                        <Image Source="y_bar.png"
+                                               WidthRequest="{Binding bar_widht}" 
+                                               Aspect="Fill"
+                                               HeightRequest="30"></Image>
+                                        <Image Source="five_stars.png"
+                                               WidthRequest="120" 
+                                               Aspect="Fill"
+                                               HeightRequest="30"></Image>
+                                    </RelativeLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
