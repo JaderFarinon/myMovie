@@ -29,7 +29,6 @@ namespace my_movie.Views
             var selFilme = e.SelectedItem as Filme;
             //Chama a view de detalhamento do filme passando o objeto de tipo Filme
             await Navigation.PushAsync(new Detalhe(selFilme));
-            moviesList.SelectedItem = null;
         }
     }
 }
