@@ -37,11 +37,6 @@
                                 Margin="0,20,0,20"
                                 HorizontalTextAlignment="Center">
                         </Label>
-                        <Label  Text="Gênero: "
-                                x:Name="lblgenero"
-                                TextColor="White"
-                                HorizontalTextAlignment="Center">
-                        </Label>
                         <StackLayout Orientation="Vertical"
                                      HorizontalOptions="End"
                                      Margin="0,20,0,0">
