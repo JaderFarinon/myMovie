@@ -18,7 +18,7 @@ namespace my_movie.Views
 
             //Ao selecionar item da lista
             moviesList.ItemSelected += ListaFilmes_ItemSelected;
-
+            
 
         }
 
