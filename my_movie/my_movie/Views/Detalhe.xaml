@@ -12,8 +12,9 @@
 
             <!-- capa -->
             <StackLayout Orientation="Horizontal"
-                         Margin="0, 5, 0, 0"
-                         VerticalOptions="Start">
+                         Margin="10, 18, 0, 0"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Start">
                 <Image WidthRequest="150"
                        x:Name="imgposter">
                 </Image>
@@ -21,7 +22,7 @@
                 <!-- info + avaliação-->
                 <StackLayout Orientation="Horizontal"
                          VerticalOptions="Center"
-                         Margin="10,20,10,0">
+                         Padding="0,0,0,30">
                     <StackLayout VerticalOptions="Center"
                              Orientation="Vertical"
                              HorizontalOptions="CenterAndExpand">
@@ -51,15 +52,15 @@
                             <!-- Barra de avaliações -->
                             <RelativeLayout HorizontalOptions="End">
                                 <Image Source="y_bar.png"
-                               WidthRequest="160" 
+                               WidthRequest="140" 
                                Aspect="Fill"
-                               HeightRequest="40"
+                               HeightRequest="30"
                                x:Name="imgbarra">
                                 </Image>
                                 <Image Source="five_stars.png"
-                               WidthRequest="160" 
+                               WidthRequest="140" 
                                Aspect="Fill"
-                               HeightRequest="40">
+                               HeightRequest="30">
                                 </Image>
                             </RelativeLayout>
                         </StackLayout>

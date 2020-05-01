@@ -1,5 +1,9 @@
 ﻿using my_movie.Classes;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -23,6 +27,8 @@ namespace my_movie.Views
             imgbarra.WidthRequest = selFilme.Bar_widht;
             //Data de lançamento
             lblrelease.Text = "Lançamento: " + DateTime.Parse(selFilme.Release_date).ToString("dd/MM/yyyy");
+            //Gênero
+            //lblgenero.Text = "Gênero: " + selFilme.Genre_ids;
             //Imagem maior backdrop
             imgbg.Source = selFilme.Backdrop_path;
         }

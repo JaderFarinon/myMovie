@@ -20,8 +20,8 @@ namespace my_movie.Classes
                     Poster_path = "https://image.tmdb.org/t/p/w92" + listaJson.Results[i].Poster_path,
                     Release_date = listaJson.Results[i].Release_date,
                     Genre_ids = listaJson.Results[i].Genre_ids,
-                    Release_year = listaJson.Results[i].Release_date.Substring(0, 4),
-                    Bar_widht = (120 * listaJson.Results[i].Vote_average) / 10
+                    Release_year = listaJson.Results[i].Release_date.Substring(0,4),
+                    Bar_widht = (120 * listaJson.Results[i].Vote_average)/10
                 });
             }
             return listaApp;
